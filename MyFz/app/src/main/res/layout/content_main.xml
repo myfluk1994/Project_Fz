@@ -28,26 +28,33 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="centerCrop"
                 android:id="@+id/imageButton"
-                android:layout_weight="0.10" />
+                android:layout_weight="0.10"
+                android:src="@drawable/koknum" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="centerCrop"
                 android:id="@+id/imageButton2"
-                android:layout_weight="0.10" />
+                android:layout_weight="0.10"
+                android:src="@drawable/light" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="centerCrop"
                 android:id="@+id/imageButton3"
-                android:layout_weight="0.10" />
+                android:layout_weight="0.10"
+                android:src="@drawable/h01" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:id="@+id/imageButton4"
-                android:layout_weight="0.10" />
+                android:layout_weight="0.10"
+                android:src="@drawable/abc_scrubber_control_to_pressed_mtrl_000" />
 
             <ImageButton
                 android:layout_width="match_parent"
