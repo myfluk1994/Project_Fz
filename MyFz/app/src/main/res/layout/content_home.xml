@@ -9,13 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.codemobiles.myfz.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.codemobiles.myfz.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView4" >
 
         <LinearLayout
             android:orientation="vertical"
@@ -28,25 +28,25 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:id="@+id/button9"
+                android:id="@+id/button13"
                 android:background="@drawable/koknum" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:id="@+id/button10"
+                android:id="@+id/button14"
                 android:background="@drawable/light" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:id="@+id/button11"
+                android:id="@+id/button15"
                 android:background="@drawable/h01" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:id="@+id/button12"
+                android:id="@+id/button16"
                 android:background="@drawable/kroyraen" />
         </LinearLayout>
     </ScrollView>
