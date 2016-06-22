@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:hint="LastName"
+            android:hint="Username"
             android:maxLength="20"
             android:ems="10"
             android:id="@+id/editText2" />

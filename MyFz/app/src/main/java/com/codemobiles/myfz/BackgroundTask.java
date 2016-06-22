@@ -37,10 +37,12 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
 
     }
 
+
+    //Register
     @Override
     protected String doInBackground(String... params) {
-        String reg_url = "http://192.168.1.43/fz/register.php";
-        String login_url = "http://192.168.1.43/fz/login.php";
+        String reg_url = "http://192.168.1.4/fz/register.php";
+        String login_url = "http://192.168.1.4/fz/login.php";
         String method = params[0];
         if (method.equals("RegisterFz")) {
             String name = params[1];
@@ -76,7 +78,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
+//Login
         } else if (method.equals("login")) {
             String login_name = params[1];
             String login_pass = params[2];
@@ -131,8 +133,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         if (result.equals("Registration Success...")) {
             Toast.makeText(ctx, result, Toast.LENGTH_LONG).show();
         } else {
-           // alertDialog.setMessage(result);
-          //  alertDialog.show();
+           //alertDialog.setMessage("Registration Fail...");
+           //alertDialog.show();
         }
 
     }

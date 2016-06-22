@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".loginFz"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -43,22 +43,25 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCdD3jyNCZPKXO0cmcO5PeK1f2NWprrTV8" />
 
         <activity
             android:name=".Mapsmeet"
             android:label="@string/title_activity_mapsmeet" />
         <activity android:name=".Phonenumber" />
         <activity android:name=".Confirmpress"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserAreaActivity"></activity>
     </application>
     <uses-library android:name="com.google.android.maps" > </uses-library>
 
     <meta-data
     android:name="com.google.android.maps.v2.API_KEY"
-    android:value="AIzaSyCzk7q5A8AIqJpwRwctvupdmT6RKCk5fVE" />
+    android:value="AIzaSyCdD3jyNCZPKXO0cmcO5PeK1f2NWprrTV8" />
 
     <meta-data
     android:name="com.google.android.gms.version"
     android:value="@integer/google_play_services_version" />
+
 
 </manifest>
