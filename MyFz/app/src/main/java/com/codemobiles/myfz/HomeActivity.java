@@ -14,16 +14,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    EditText ET_NAME,ET_PASS;
+    String login_name,login_pass;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        ET_NAME = (EditText)findViewById(R.id.Username);
+        ET_PASS = (EditText)findViewById(R.id.password);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -78,8 +85,9 @@ public class HomeActivity extends AppCompatActivity
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -145,11 +153,16 @@ public class HomeActivity extends AppCompatActivity
     }
 
     public void userReg(View view) {
-
+        startActivity(new Intent(this, RegisterFz.class));
 
     }
 
     public void userLogin(View view) {
-        startActivity(new Intent(this, RegisterFz.class));
+
+    login_name = ET_NAME.getText().toString();
+        login_pass = ET_PASS.getText().toString();
+        String method = "login";
+        BackgroundTask backgroundTask = new BackgroundTask(this);
+        backgroundTask.execute(method,login_name,login_pass);
     }
 }
