@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="โรงพยาบาลราชวิถี"
+        android:text="Apartment116Place"
         android:textColor="@color/colorAccent"
         android:id="@+id/textView2"
         android:layout_marginTop="49dp"
@@ -43,8 +43,8 @@
 
     <fragment
         android:id="@+id/map"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ที่อยู่ : เลขที่ 2 โรงพยาบาลราชวิถี ถนนพญาไท แขวงทุ่งพญาไท เขตราชเทวี กทม."
+        android:text="ที่อยู่ : เลขที่ 116 ตึกApartment116Place ซอยราชวิถี4 ถนนสามเสนใน เขตพญาไท กรุงเทพฯ10400"
         android:id="@+id/textView6"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/textView2"
@@ -66,7 +66,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="เบอร์โทรศัพท์ : 02-354-8108 ถึง 37"
+        android:text="http://www.BusBle.com"
         android:id="@+id/textView7"
         android:textColor="@color/colorAccent"
         android:layout_below="@+id/textView6"
@@ -75,11 +75,12 @@
         android:layout_marginTop="35dp" />
 
 
+
     <Button style="?android:attr/buttonStyleSmall"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginTop="120dp"
-        android:layout_marginLeft="260dp"
+        android:layout_marginLeft="350dp"
         android:background="@color/colorPrimaryDark"
         android:textColor="#ffffff"
         android:text="ถัดไป"

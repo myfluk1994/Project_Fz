@@ -47,16 +47,16 @@ public class Mapsmeet extends AppCompatActivity {
     private GoogleMap googleMap;
 
     // Latitude & Longitude
-    private Double Latitude = 13.7641642;
-    private Double Longitude = 100.5363301;
+    private Double Latitude = 13.765084;
+    private Double Longitude = 100.543237;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.showmaps);
 
-        Latitude = 13.7641642;
-        Longitude = 100.5363301;
+        Latitude = 13.765110;
+        Longitude = 100.543245;
 
         if (Latitude > 0 && Longitude > 0) {
             //*** Display Google Map
@@ -81,7 +81,7 @@ public class Mapsmeet extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Uri gmmIntentUri = Uri.parse("google.navigation:q=13.7641642,100.5363301");
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=13.765084,100.543237");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
@@ -95,7 +95,7 @@ public class Mapsmeet extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Uri gmmIntentUri = Uri.parse("google.navigation:q=13.7641642,100.5363301");
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=13.765084,100.543237");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
@@ -128,7 +128,7 @@ public class Mapsmeet extends AppCompatActivity {
         }
 
         public void goToSo(View view) {
-            goToUrl("http://www.rajavithi.go.th/");
+            goToUrl("http://www.BusBle.com/");
         }
 
         private void goToUrl(String url) {
